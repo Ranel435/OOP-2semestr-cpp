@@ -11,7 +11,7 @@ int main(int argc, char const *argv[])
 
     int x = 1234, y = 123;
 
-    std::cout << "sum: " << max(x, y) << std::endl;
+    std::cout << "sum: " << sum(x, y) << std::endl;
     std::cout << "sqrt: " << sqrt(x) << std::endl;
 
     std::cout << "max: " << max(x, y) << std::endl;
