@@ -7,7 +7,7 @@ int sqrt(int a);
 
 int main(int argc, char const *argv[])
 {
-    std::cout << "I am compiled!" << std::endl;
+    std::cout << "ABOBA" << std::endl;
 
     int x = 1234, y = 123;
 
