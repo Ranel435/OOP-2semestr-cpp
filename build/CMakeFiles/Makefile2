@@ -63,11 +63,13 @@ CMAKE_BINARY_DIR = /Users/dremotha/Projects/CLionProjects/OOP-2semestr-cpp/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/program.dir/all
+all: CMakeFiles/main.dir/all
+all: CMakeFiles/solver.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/program.dir/codegen
+codegen: CMakeFiles/main.dir/codegen
+codegen: CMakeFiles/solver.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -75,39 +77,135 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/program.dir/clean
+clean: CMakeFiles/main.dir/clean
+clean: CMakeFiles/solver.dir/clean
+clean: CMakeFiles/run_main.dir/clean
+clean: CMakeFiles/run_solver.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/program.dir
+# Target rules for target CMakeFiles/main.dir
 
 # All Build rule for target.
-CMakeFiles/program.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/dremotha/Projects/CLionProjects/OOP-2semestr-cpp/build/CMakeFiles --progress-num=1,2,3 "Built target program"
-.PHONY : CMakeFiles/program.dir/all
+CMakeFiles/main.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/dremotha/Projects/CLionProjects/OOP-2semestr-cpp/build/CMakeFiles --progress-num=1,2,3 "Built target main"
+.PHONY : CMakeFiles/main.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/program.dir/rule: cmake_check_build_system
+CMakeFiles/main.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dremotha/Projects/CLionProjects/OOP-2semestr-cpp/build/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/program.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dremotha/Projects/CLionProjects/OOP-2semestr-cpp/build/CMakeFiles 0
-.PHONY : CMakeFiles/program.dir/rule
+.PHONY : CMakeFiles/main.dir/rule
 
 # Convenience name for target.
-program: CMakeFiles/program.dir/rule
-.PHONY : program
+main: CMakeFiles/main.dir/rule
+.PHONY : main
 
 # codegen rule for target.
-CMakeFiles/program.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/codegen
-.PHONY : CMakeFiles/program.dir/codegen
+CMakeFiles/main.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/codegen
+.PHONY : CMakeFiles/main.dir/codegen
 
 # clean rule for target.
-CMakeFiles/program.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/program.dir/build.make CMakeFiles/program.dir/clean
-.PHONY : CMakeFiles/program.dir/clean
+CMakeFiles/main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/clean
+.PHONY : CMakeFiles/main.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/solver.dir
+
+# All Build rule for target.
+CMakeFiles/solver.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/solver.dir/build.make CMakeFiles/solver.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/solver.dir/build.make CMakeFiles/solver.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/dremotha/Projects/CLionProjects/OOP-2semestr-cpp/build/CMakeFiles --progress-num=4,5 "Built target solver"
+.PHONY : CMakeFiles/solver.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/solver.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dremotha/Projects/CLionProjects/OOP-2semestr-cpp/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/solver.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dremotha/Projects/CLionProjects/OOP-2semestr-cpp/build/CMakeFiles 0
+.PHONY : CMakeFiles/solver.dir/rule
+
+# Convenience name for target.
+solver: CMakeFiles/solver.dir/rule
+.PHONY : solver
+
+# codegen rule for target.
+CMakeFiles/solver.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/solver.dir/build.make CMakeFiles/solver.dir/codegen
+.PHONY : CMakeFiles/solver.dir/codegen
+
+# clean rule for target.
+CMakeFiles/solver.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/solver.dir/build.make CMakeFiles/solver.dir/clean
+.PHONY : CMakeFiles/solver.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/run_main.dir
+
+# All Build rule for target.
+CMakeFiles/run_main.dir/all: CMakeFiles/main.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_main.dir/build.make CMakeFiles/run_main.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_main.dir/build.make CMakeFiles/run_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/dremotha/Projects/CLionProjects/OOP-2semestr-cpp/build/CMakeFiles --progress-num= "Built target run_main"
+.PHONY : CMakeFiles/run_main.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/run_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dremotha/Projects/CLionProjects/OOP-2semestr-cpp/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/run_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dremotha/Projects/CLionProjects/OOP-2semestr-cpp/build/CMakeFiles 0
+.PHONY : CMakeFiles/run_main.dir/rule
+
+# Convenience name for target.
+run_main: CMakeFiles/run_main.dir/rule
+.PHONY : run_main
+
+# codegen rule for target.
+CMakeFiles/run_main.dir/codegen: CMakeFiles/main.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_main.dir/build.make CMakeFiles/run_main.dir/codegen
+.PHONY : CMakeFiles/run_main.dir/codegen
+
+# clean rule for target.
+CMakeFiles/run_main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_main.dir/build.make CMakeFiles/run_main.dir/clean
+.PHONY : CMakeFiles/run_main.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/run_solver.dir
+
+# All Build rule for target.
+CMakeFiles/run_solver.dir/all: CMakeFiles/solver.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_solver.dir/build.make CMakeFiles/run_solver.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_solver.dir/build.make CMakeFiles/run_solver.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/dremotha/Projects/CLionProjects/OOP-2semestr-cpp/build/CMakeFiles --progress-num= "Built target run_solver"
+.PHONY : CMakeFiles/run_solver.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/run_solver.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dremotha/Projects/CLionProjects/OOP-2semestr-cpp/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/run_solver.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dremotha/Projects/CLionProjects/OOP-2semestr-cpp/build/CMakeFiles 0
+.PHONY : CMakeFiles/run_solver.dir/rule
+
+# Convenience name for target.
+run_solver: CMakeFiles/run_solver.dir/rule
+.PHONY : run_solver
+
+# codegen rule for target.
+CMakeFiles/run_solver.dir/codegen: CMakeFiles/solver.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_solver.dir/build.make CMakeFiles/run_solver.dir/codegen
+.PHONY : CMakeFiles/run_solver.dir/codegen
+
+# clean rule for target.
+CMakeFiles/run_solver.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_solver.dir/build.make CMakeFiles/run_solver.dir/clean
+.PHONY : CMakeFiles/run_solver.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -1,3 +1,6 @@
-/Users/dremotha/Projects/CLionProjects/OOP-2semestr-cpp/build/CMakeFiles/program.dir
+/Users/dremotha/Projects/CLionProjects/OOP-2semestr-cpp/build/CMakeFiles/main.dir
+/Users/dremotha/Projects/CLionProjects/OOP-2semestr-cpp/build/CMakeFiles/solver.dir
+/Users/dremotha/Projects/CLionProjects/OOP-2semestr-cpp/build/CMakeFiles/run_main.dir
+/Users/dremotha/Projects/CLionProjects/OOP-2semestr-cpp/build/CMakeFiles/run_solver.dir
 /Users/dremotha/Projects/CLionProjects/OOP-2semestr-cpp/build/CMakeFiles/edit_cache.dir
 /Users/dremotha/Projects/CLionProjects/OOP-2semestr-cpp/build/CMakeFiles/rebuild_cache.dir
