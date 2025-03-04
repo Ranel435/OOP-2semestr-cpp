@@ -32,3 +32,6 @@
 *.app
 .DS_Store
 /build
+/build
+build/program
+/.vscode
